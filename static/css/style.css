@@ -1,21 +1,30 @@
 /* 網站整體基礎樣式 */
 body {
-    background-color: #222; /* 深色背景 */
-    color: #eee; /* 淺色文字 */
+    background-color: #222;
+    /* 深色背景 */
+    color: #eee;
+    /* 淺色文字 */
 }
 
 /* 導航列 */
 .navbar-dark.bg-dark {
-    background-color: #333 !important; /* 更深的導航列背景 */
+    background-color: #333 !important;
+    /* 更深的導航列背景 */
 }
+
 .navbar-brand {
-    color: #fff !important; /* 品牌文字顏色 */
+    color: #fff !important;
+    /* 品牌文字顏色 */
 }
+
 .navbar-nav .nav-link {
-    color: #ccc !important; /* 導航連結文字顏色 */
+    color: #ccc !important;
+    /* 導航連結文字顏色 */
 }
+
 .navbar-nav .nav-link:hover {
-    color: #fff !important; /* 導航連結懸停顏色 */
+    color: #fff !important;
+    /* 導航連結懸停顏色 */
 }
 
 /* 英雄區塊 */
@@ -27,68 +36,109 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* 區塊標題 */
 h2 {
-    color: #fff; /* 確保標題在深色背景下顯眼 */
+    color: #fff;
+    /* 確保標題在深色背景下顯眼 */
 }
 
 /* 服務項目和優勢卡片 */
-.service-item, .advantage-item {
-    background-color: #3a3a3a; /* 卡片背景色 */
-    border-color: #555; /* 卡片邊框色 */
-    color: #eee; /* 卡片文字顏色 */
+.service-item,
+.advantage-item {
+    background-color: #3a3a3a;
+    /* 卡片背景色 */
+    border-color: #555;
+    /* 卡片邊框色 */
+    color: #eee;
+    /* 卡片文字顏色 */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.service-item:hover, .advantage-item:hover {
+
+.service-item:hover,
+.advantage-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.3) !important; /* 更明顯的陰影效果 */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3) !important;
+    /* 更明顯的陰影效果 */
 }
-.service-item i, .advantage-item i {
-    color: #0d6efd; /* 服務圖標使用 Bootstrap primary 藍色 */
-}
+
+.service-item i,
 .advantage-item i {
-    color: #198754; /* 優勢圖標使用 Bootstrap success 綠色 */
+    color: #0d6efd;
+    /* 服務圖標使用 Bootstrap primary 藍色 */
+}
+
+.advantage-item i {
+    color: #198754;
+    /* 優勢圖標使用 Bootstrap success 綠色 */
 }
 
 /* 作品集卡片 */
 .card {
-    background-color: #3a3a3a !important; /* 卡片背景色 */
-    color: #eee !important; /* 卡片文字顏色 */
-    border-color: #555 !important; /* 卡片邊框色 */
+    background-color: #3a3a3a !important;
+    /* 卡片背景色 */
+    color: #eee !important;
+    /* 卡片文字顏色 */
+    border-color: #555 !important;
+    /* 卡片邊框色 */
 }
+
 .card-title {
     color: #fff !important;
 }
 
 /* 聯絡我們區塊 */
 .bg-primary {
-    background-color: #737577 !important; /* 使用 Bootstrap primary 藍色，也可以自定義更暗的顏色 */
+    background-color: #737577 !important;
+    /* 使用 Bootstrap primary 藍色，也可以自定義更暗的顏色 */
 }
+
 .contact-info li i {
-    width: 30px; /* 統一圖標寬度 */
-    color: #fff; /* 圖標顏色 */
+    width: 30px;
+    /* 統一圖標寬度 */
+    color: #fff;
+    /* 圖標顏色 */
 }
+
 .contact-info a {
-    color: #fff !important; /* 聯絡資訊連結顏色 */
+    color: #fff !important;
+    /* 聯絡資訊連結顏色 */
     text-decoration: none;
 }
+
 .contact-info a:hover {
     text-decoration: underline;
 }
+
 .social-links a {
-    color: #fff; /* 社群連結圖標顏色 */
+    color: #fff;
+    /* 社群連結圖標顏色 */
 }
+
 .social-links a:hover {
-    color: #ccc; /* 社群連結圖標懸停顏色 */
+    color: #ccc;
+    /* 社群連結圖標懸停顏色 */
 }
 
 /* 頁尾 */
 footer {
-    background-color: #111; /* 最深的頁尾背景 */
+    background-color: #111;
+    /* 最深的頁尾背景 */
     color: #ccc;
     padding: 20px 0;
     text-align: center;
+}
+
+/* 動畫效果工具類 */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
